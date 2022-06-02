@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" id="fm">
+<input type="text" name="username">
+<input type="submit" value="提交">
+
+
+
+    <script>
+        document.getElementById("fm").onsubmit=function (){
+            //onsumbit 返回true 则表单会被提交，返回false 则表单不会被提交
+            return true;
+        }
+    </script>
+</form>
+</body>
+</html>

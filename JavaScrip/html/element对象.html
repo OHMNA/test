@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<img id="light" src="../imgs/off.gif">
+<div>泰兰德的夏天永不停歇</div>
+<div>我爱的少年永远热恋</div>
+
+
+
+
+
+
+<script>
+    //根据id属性值返回一个element对象
+    let img = document.getElementById("light");
+    img.src="../imgs/on.gif";
+
+    /*
+    *  style:设置元素的css样式
+    *  innerHTML：设置元素内容
+    * */
+    //根据标签名称返回一个element对象
+    let div = document.getElementsByTagName("div");
+
+    for (let i = 0; i < div.length; i++) {
+        div[i].style.color="red"
+
+        div[1].innerHTML="我爱的少年永远热年!!!!!";
+
+    }
+
+
+
+
+
+    /*document.getElementById();//根据id属性值返回一个element对象
+    document.getElementsByName();//根据name属性值返回一个element对象
+    document.getElementsByClassName();//根据class属性值返回一个element对象
+    document.getElementsByTagName();//根据标签名称返回一个element对象*/
+
+</script>
+</body>
+</html>

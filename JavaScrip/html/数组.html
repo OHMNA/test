@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //方式一：
+    let array=new Array(1,2,3);
+    //alert(array);
+
+    //方式二
+    let array1=[5,6,7];
+    //alert(array1);
+
+    // 访问
+    array[0]=10;
+    //alert(array);
+
+    //特点：JavaScript中的数组跟Java中的集合一样，边长变类型
+    //边张
+    array[10]=100;
+    //alert(array);
+
+    //变类型
+   // alert(array[7]="hello");
+
+    //属性：length 数组长度
+    /*let c=[1,2,3];
+    for (let i= 0; i<c.length; i++){
+        alert(c[i]);
+    }*/
+
+    //方法：push 添加的方法
+    let q=[7,8,9];
+    //q.push(20);
+    //alert(q);
+
+    //splice ：删除的方法
+    q.splice(0,2);
+    alert(q);
+    //0：表示从第0个坐标开始删除，2：表示删除两个
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="submit" value="ON" onclick="on()">
+<input type="submit" value="off" id="sm">
+
+
+<script>
+    //方式一：
+    function on(){
+        alert("我是第一种方法")
+    }
+
+    //方法二：推荐
+    document.getElementById("sm").onclick = function() {
+        alert("我是第二种方法")
+    }
+</script>
+</body>
+</html>

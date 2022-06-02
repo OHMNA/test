@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<script src="js/axios-0.18.0.js"></script>
+<body>
+
+<script>
+   //使用axios发送请求
+   //发送get请求
+   /*axios({
+       method:"get",
+       url:"http://localhost:8080/ajax/axiosServlet?username=cbl"
+   }).then(function (response) {
+       alert(response.data);
+   })*/
+
+   //简化方法
+   axios.get("http://localhost:8080/ajax/axiosServlet?username=cbl").then(function (resp) {
+       alert(resp.data);
+   })
+
+   //发送post请求
+  /* axios({
+       method: "post",
+       url : "http://localhost:8080/ajax/axiosServlet",
+       data:"username=hlr"
+   }).then(function(response) {
+       alert(response.data)
+   })*/
+
+   //简化方式
+   axios.post("http://localhost:8080/ajax/axiosServlet","username=hlr").then(function(resp) {
+       alert(resp.data);
+   })
+</script>
+</body>
+</html>
